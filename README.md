@@ -1,28 +1,12 @@
+
+<img width="1360" height="619" alt="Screenshot (267)" src="https://github.com/user-attachments/assets/1a81b91b-c30c-45fa-b765-808ab7e50ffc" />
+<img width="1366" height="626" alt="Screenshot (266)" src="https://github.com/user-attachments/assets/9301fc7b-049f-4093-bc01-03174000e04d" />
+<img width="1366" height="626" alt="Screenshot (266)" src="https://github.com/user-attachments/assets/3855c4aa-5686-49f3-9817-84c19580b5e7" />
+
+
 # School Management System
 
 A modern, professional school management system built with Laravel 12, AdminLte package, and Laravel components for a seamless user experience. This system efficiently manages students, teachers, classrooms, and user authentication with a powerful admin dashboard.
-
----
-
-## 📋 Table of Contents
-
-- [Features](#features)
-- [Technologies Stack](#technologies-stack)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Project Structure](#project-structure)
-- [Authentication](#authentication)
-- [Components & Views](#components--views)
-- [AdminLte Package](#adminlte-package)
-- [Database Schema](#database-schema)
-- [Routes](#routes)
-- [Development Commands](#development-commands)
-- [Testing](#testing)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
-
 ---
 
 ## ✨ Features
