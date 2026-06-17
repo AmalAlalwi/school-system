@@ -1,7 +1,8 @@
 
 <img width="1360" height="619" alt="Screenshot (267)" src="https://github.com/user-attachments/assets/1a81b91b-c30c-45fa-b765-808ab7e50ffc" />
 <img width="1366" height="626" alt="Screenshot (266)" src="https://github.com/user-attachments/assets/9301fc7b-049f-4093-bc01-03174000e04d" />
-<img width="1366" height="626" alt="Screenshot (266)" src="https://github.com/user-attachments/assets/3855c4aa-5686-49f3-9817-84c19580b5e7" />
+<img width="1366" height="768" alt="Screenshot (263)" src="https://github.com/user-attachments/assets/139a0f75-cd76-4874-aaa2-a10043dc21f3" />
+
 
 
 # School Management System
