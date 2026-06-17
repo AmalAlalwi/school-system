@@ -21,7 +21,7 @@ class ClassroomController extends Controller
               $query->where('capacity', $capacity);
         }
         return view('dashboard.pages.classroom.index',[
-            'classrooms' => $query->paginate(10),
+            'classrooms' => $query->paginate(5),
         ]);
     }
     public function create()

@@ -22,7 +22,7 @@ class StudentController extends Controller
               $query->where('capacity', $capacity);
         }
         return view('dashboard.pages.student.index',[
-            'students' => $query->paginate(10),
+            'students' => $query->paginate(5),
             'classrooms' => Classroom::all(),
         ]);
         

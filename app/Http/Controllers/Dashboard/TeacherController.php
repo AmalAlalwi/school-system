@@ -25,7 +25,7 @@ class TeacherController extends Controller
             $query->where('specialization', $specialization);
         }
         return view('dashboard.pages.teacher.index',[
-            'teachers' => $query->paginate(10),
+            'teachers' => $query->paginate(5),
             'classrooms' => Classroom::all(),
         ]);
     }

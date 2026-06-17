@@ -60,6 +60,7 @@
                 @endforeach
             </tbody>
           </table>
+          {{ $students->links() }}
         </div>
         <!-- /.card-body -->
       </div>

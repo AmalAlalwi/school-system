@@ -256,7 +256,7 @@ POST   /reset-password     # Submit new password
 
 ```bash
 # Clone & setup
-git clone <https://github.com/AmalAlalwi/school-system.git>
+git clone https://github.com/AmalAlalwi/school-system.git
 cd school-system
 
 # Install dependencies

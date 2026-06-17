@@ -14,28 +14,32 @@ class TeacherSeeder extends Seeder
      */
     public function run(): void
     {
-        Teacher::create([
-            'name' => 'Teacher 1',
-            'email' => 'teacher1@gmail.com',
-            'phone' => '0955684221',
-            'specialization' => 'Math teacher',
-            'classroom_id' => Classroom::inRandomOrder()->value('id'),
-        ]);
+        $teachers = [
+            ['name' => 'Dr. Ahmed Hassan', 'specialization' => 'Mathematics'],
+            ['name' => 'Fatima Al-Rashid', 'specialization' => 'Arabic Language'],
+            ['name' => 'Mohammed Ibrahim', 'specialization' => 'English Language'],
+            ['name' => 'Dr. Amina Saleh', 'specialization' => 'Science'],
+            ['name' => 'Omar Abdullah', 'specialization' => 'Physical Education'],
+            ['name' => 'Noor Khalil', 'specialization' => 'Art & Design'],
+            ['name' => 'Tariq Yousef', 'specialization' => 'Computer Science'],
+            ['name' => 'Layla Nasser', 'specialization' => 'History & Geography'],
+            ['name' => 'Hassan Sami', 'specialization' => 'Islamic Studies'],
+            ['name' => 'Dina Waleed', 'specialization' => 'Music & Performance'],
+            ['name' => 'Rashid Karim', 'specialization' => 'Chemistry'],
+            ['name' => 'Hana Mahmoud', 'specialization' => 'Biology'],
+            ['name' => 'Karim Hassan', 'specialization' => 'Physics'],
+            ['name' => 'Zainab Mohamed', 'specialization' => 'Social Studies'],
+            ['name' => 'Sami Rashid', 'specialization' => 'Information Technology'],
+        ];
 
-        Teacher::create([
-            'name' => 'Teacher 2',
-            'email' => 'teacher2@gmail.com',
-            'phone' => '0955684221',
-            'specialization' => 'Arabic teacher',
-            'classroom_id' => Classroom::inRandomOrder()->value('id'),
-        ]);
-
-        Teacher::create([
-            'name' => 'Teacher 3',
-            'email' => 'teacher3@gmail.com',
-            'phone' => '0955684221',
-            'specialization' => 'English teacher',
-            'classroom_id' => Classroom::inRandomOrder()->value('id'),
-        ]);
+        foreach ($teachers as $index => $teacher) {
+            Teacher::create([
+                'name' => $teacher['name'],
+                'email' => 'teacher' . ($index + 1) . '@school.edu',
+                'phone' => fake()->phoneNumber(),
+                'specialization' => $teacher['specialization'],
+                'classroom_id' => Classroom::inRandomOrder()->value('id') ?? null,
+            ]);
+        }
     }
 }

@@ -14,26 +14,21 @@ class StudentSeeder extends Seeder
      */
     public function run(): void
     {
-        Student::create([
-            'name' => 'Student 1',
-            'email' => 'student1@gmail.com',
-            'phone' => '0955684221',
-            'birth_date' => fake()->dateTimeBetween('-25 years', '-18 years')->format('Y-m-d'),
-            'classroom_id' => Classroom::inRandomOrder()->value('id')
-         ]);
-         Student::create([
-            'name' => 'Student 2',
-            'email' => 'student2@gmail.com',
-            'phone' => '0955684221',
-            'birth_date' => fake()->dateTimeBetween('-25 years', '-18 years')->format('Y-m-d'),
-            'classroom_id' => Classroom::inRandomOrder()->value('id')
-        ]);
-        Student::create([
-            'name' => 'Student 3',
-            'email' => 'student3@gmail.com',
-            'phone' => '0955684221',
-            'birth_date' => fake()->dateTimeBetween('-25 years', '-18 years')->format('Y-m-d'),
-            'classroom_id' => Classroom::inRandomOrder()->value('id')
-        ]);
+        $students = [
+            'Ahmed Mohammad', 'Fatima Hassan', 'Mohammad Ali', 'Amina Ahmed',
+            'Omar Ibrahim', 'Noor Abdullah', 'Zainab Karim', 'Ibrahim Sami',
+            'Layla Rashid', 'Yousef Hamza', 'Hana Waleed', 'Karim Nasser',
+            'Dina Mohamed', 'Hassan Salim', 'Leena Khalid'
+        ];
+
+        foreach ($students as $index => $name) {
+            Student::create([
+                'name' => $name,
+                'email' => 'student' . ($index + 1) . '@school.edu',
+                'phone' => fake()->phoneNumber(),
+                'birth_date' => fake()->dateTimeBetween('-18 years', '-8 years')->format('Y-m-d'),
+                'classroom_id' => Classroom::inRandomOrder()->value('id') ?? null
+            ]);
+        }
     }
 }
